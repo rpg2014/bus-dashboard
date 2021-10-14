@@ -1,0 +1,24 @@
+
+
+.bus-stop-title {
+    font-size: small;
+    font-family: DotsAllForNow;
+  color: orange;
+}
+.bus-header {
+    margin-bottom: 1rem;
+}
+
+.bus-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    // width: 100%;
+    // margin: auto
+}
+
+.bus-list {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-items: space-between;
+    align-items: center;
+}
