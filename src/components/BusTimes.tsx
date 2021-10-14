@@ -36,6 +36,7 @@ const BusList = ({ stopId }: { stopId: string }) => {
     if (!stop) {
         return <div className='bus-font'>&quot;Loading...&quot;</div>
     }
+    
     return (
         <div className={styles["bus-list"]}>
             <h4 className={styles["bus-stop-title"]}>{stop.data.references.stops?.find((value) => value.id === stopId)?.name || "Loading..."}</h4>
