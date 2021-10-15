@@ -71,6 +71,10 @@ const UpcomingBusComponent = ({ arrival, index, stopName, routeNumberToShow }: U
     if (routeNumberToShow && arrival.routeShortName !== routeNumberToShow?.toString()) {
         return null;
     }
+
+    if(minutesAway > 30){
+        return null;
+    }
     return (
         <div key={index} className='bus-font'>{`${bus.route} in ${bus.minutesAway?.toFixed(0)} mins`}</div>
     )

@@ -5,4 +5,5 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
 //   basePath: '/C:/Users/pgive/Documents/GitHub/bus-dashboard/out'
+    productionBrowserSourceMaps: true,
 })

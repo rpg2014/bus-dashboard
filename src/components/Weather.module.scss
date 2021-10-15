@@ -1,0 +1,35 @@
+
+
+
+.text {
+    color: rgb(255, 243, 205);
+}
+
+.section {
+    flex-basis: 50%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image{
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .image {
+      animation: image-spin infinite 10s ease-in-out;
+    }
+  }
+
+@keyframes image-spin {
+    from {
+      transform: rotateY(-45deg);
+    }
+    to {
+      transform: rotateY(45deg);
+    }
+  }
